@@ -160,61 +160,7 @@
             color: var(--light-green)
         }
 
-        .lang-switch {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            margin-left: 10px;
-            padding-left: 20px;
-            border-left: 1px solid rgba(0, 0, 0, 0.1)
-        }
 
-        .lang-btn {
-            font-family: 'Inter', sans-serif;
-            font-weight: 600;
-            color: var(--gray-text);
-            text-decoration: none;
-            font-size: 0.9rem;
-            cursor: pointer;
-            transition: all 0.3s;
-            padding: 4px 6px;
-            border-radius: 4px
-        }
-
-        .lang-btn:hover,
-        .lang-btn.active {
-            color: var(--primary-green);
-            background: rgba(76, 175, 80, 0.1)
-        }
-
-        .lang-separator {
-            color: #ccc;
-            font-size: 0.9rem
-        }
-
-        #google_translate_element {
-            display: none !important;
-        }
-
-        .goog-te-banner-frame.skiptranslate {
-            display: none !important;
-        }
-
-        body {
-            top: 0px !important;
-        }
-
-        .goog-tooltip,
-        .goog-te-balloon-frame,
-        .goog-te-gadget-simple,
-        .goog-te-menu-value {
-            display: none !important;
-        }
-
-        font {
-            background-color: transparent !important;
-            box-shadow: none !important;
-        }
 
         .nav-link::after {
             content: '';
@@ -944,16 +890,17 @@
                 }
             }
 
-            flex-direction: column;
-            gap: 1rem;
-            text-align: center
-        }
+            .footer-bottom {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center
+            }
 
-        .footer-links {
-            flex-direction: column;
-            gap: .5rem;
-            align-items: center
-        }
+            .footer-links {
+                flex-direction: column;
+                gap: .5rem;
+                align-items: center
+            }
         }
 
         @media (max-width:480px) {
@@ -1032,12 +979,7 @@
                 <li><a href="contact.html" class="nav-link">Contact Us</a></li>
                 <li><a href="partners.html" class="nav-link">Partners</a></li>
                 <li><a href="blog.html" class="nav-link">Blog</a></li>
-                <li class="lang-switch">
-                    <a href="javascript:void(0)" onclick="changeLanguage('id')" class="lang-btn active"
-                        id="langID">ID</a>
-                    <span class="lang-separator">|</span>
-                    <a href="javascript:void(0)" onclick="changeLanguage('en')" class="lang-btn" id="langEN">EN</a>
-                </li>
+
             </ul>
         </div>
     </nav>
@@ -1285,23 +1227,7 @@
     <script>
         function toggleMenu() { const menu = document.getElementById('navMenu'); menu.classList.toggle('active') } document.querySelectorAll('.nav-link').forEach(link => { link.addEventListener('click', () => { document.getElementById('navMenu').classList.remove('active') }) }); document.getElementById('bookingForm').addEventListener('submit', function (e) { e.preventDefault(); const checkin = document.getElementById('checkin').value; const checkout = document.getElementById('checkout').value; const guests = document.getElementById('guests').value; const roomtype = document.getElementById('roomtype').value; const message = `Halo, saya ingin booking Kalibaru Cottage:%0A%0ACheck-in: ${checkin}%0ACheck-out: ${checkout}%0AJumlah Tamu: ${guests}%0ATipe Kamar: ${roomtype}%0A%0AMohon informasi ketersediaan dan harga. Terima kasih!`; window.open(`https://wa.me/6281234567890?text=${message}`, '_blank') }); function selectRoom(roomType) { const roomNames = { deluxe: 'Deluxe Cottage', family: 'Family Cottage', superior: 'Superior Cottage' }; document.getElementById('roomtype').value = roomType; document.getElementById('bookingForm').scrollIntoView({ behavior: 'smooth' }); alert(`Anda memilih ${roomNames[roomType]}. Silakan lengkapi form booking.`) } window.addEventListener('scroll', function () { const navbar = document.querySelector('.navbar'); if (window.scrollY > 50) { navbar.style.boxShadow = '0 5px 30px rgba(0,0,0,0.15)' } else { navbar.style.boxShadow = '0 2px 20px rgba(0,0,0,0.1)' } }); const today = new Date().toISOString().split('T')[0]; document.getElementById('checkin').setAttribute('min', today); document.getElementById('checkout').setAttribute('min', today); document.getElementById('checkin').addEventListener('change', function () { const checkinDate = new Date(this.value); checkinDate.setDate(checkinDate.getDate() + 1); const minCheckout = checkinDate.toISOString().split('T')[0]; document.getElementById('checkout').setAttribute('min', minCheckout) });
     </script>
-    <div id="google_translate_element"></div>
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({ pageLanguage: 'id', includedLanguages: 'en,id', autoDisplay: false }, 'google_translate_element');
-        }
-        function changeLanguage(lang) {
-            var selectField = document.querySelector(".goog-te-combo");
-            if (selectField) {
-                selectField.value = lang;
-                selectField.dispatchEvent(new Event("change"));
-                document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
-                document.getElementById('lang' + lang.toUpperCase()).classList.add('active');
-            }
-        }
-    </script>
-    <script type="text/javascript"
-        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 </body>
 
 </html>
