@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Tipe Kamar Kalibaru Cottage - Standard, Deluxe & Family Cottage Banyuwangi</title>
+    <meta name="description"
+        content="Pilih cottage yang sesuai kebutuhan Anda di Kalibaru Cottage Banyuwangi: Standard Cottage (Rp 750.000), Deluxe Cottage (Rp 1.200.000), Family Cottage (Rp 1.800.000). Semua dilengkapi fasilitas modern dan pemandangan alam.">
+    <meta name="keywords"
+        content="kamar kalibaru cottage, harga cottage banyuwangi, penginapan kalibaru, standard cottage, deluxe cottage, family cottage, resort banyuwangi">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="author" content="Kalibaru Cottage">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://kalibarucottages.web.id/rooms">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kalibarucottages.web.id/rooms">
+    <meta property="og:title" content="Tipe Kamar Kalibaru Cottage - Standard, Deluxe & Family">
+    <meta property="og:description"
+        content="Pilih cottage yang sesuai kebutuhan Anda. Mulai dari Rp 750.000/malam dengan fasilitas modern dan pemandangan alam yang memukau.">
+    <meta property="og:image" content="https://kalibarucottages.web.id/images/rooms-og.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://kalibarucottages.web.id/rooms">
+    <meta property="twitter:title" content="Tipe Kamar Kalibaru Cottage - Standard, Deluxe & Family">
+    <meta property="twitter:description"
+        content="Pilih cottage yang sesuai kebutuhan Anda. Mulai dari Rp 750.000/malam dengan fasilitas modern dan pemandangan alam yang memukau.">
+    <meta property="twitter:image" content="https://kalibarucottages.web.id/images/rooms-og.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "Product",
+          "position": 1,
+          "name": "Standard Cottage",
+          "description": "Cottage nyaman dengan arsitektur tradisional Jawa untuk pasangan atau solo traveler",
+          "offers": {
+            "@type": "Offer",
+            "price": "750000",
+            "priceCurrency": "IDR",
+            "availability": "https://schema.org/InStock"
+          },
+          "amenityFeature": [
+            {"@type": "LocationFeatureSpecification", "name": "King Bed atau 2 Single Beds"},
+            {"@type": "LocationFeatureSpecification", "name": "Kamar mandi dengan air panas"},
+            {"@type": "LocationFeatureSpecification", "name": "Teras pribadi view perkebunan"},
+            {"@type": "LocationFeatureSpecification", "name": "AC & TV"},
+            {"@type": "LocationFeatureSpecification", "name": "WiFi gratis"},
+            {"@type": "LocationFeatureSpecification", "name": "Sarapan untuk 2 orang"}
+          ]
+        },
+        {
+          "@type": "Product",
+          "position": 2,
+          "name": "Deluxe Cottage",
+          "description": "Cottage premium dengan ruang luas dan view terbaik ke Gunung Mrawan",
+          "offers": {
+            "@type": "Offer",
+            "price": "1200000",
+            "priceCurrency": "IDR",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Product",
+          "position": 3,
+          "name": "Family Cottage",
+          "description": "Cottage luas dengan 2 kamar tidur untuk keluarga atau group",
+          "offers": {
+            "@type": "Offer",
+            "price": "1800000",
+            "priceCurrency": "IDR",
+            "availability": "https://schema.org/InStock"
+          }
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        :root {
+            --primary-green: #2d5016;
+            --light-green: #4caf50;
+            --bg-green: #e8f5e9;
+            --dark-text: #1a1a1a;
+            --gray-text: #666
+        }
+
+        body {
+            font-family: Inter, sans-serif;
+            color: var(--dark-text);
+            line-height: 1.6
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700
+        }
+
+        img {
+            max-width: 100%;
+            height: auto
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, .98);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, .1);
+            z-index: 1000
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--primary-green);
+            text-decoration: none
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            list-style: none
+        }
+
+        .nav-link {
+            color: var(--dark-text);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: .95rem;
+            transition: color .3s
+        }
+
+        .nav-link:hover {
+            color: var(--light-green)
+        }
+
+        .lang-switch {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-left: 10px;
+            padding-left: 20px;
+            border-left: 1px solid rgba(0, 0, 0, 0.1)
+        }
+
+        .lang-btn {
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            color: var(--gray-text);
+            text-decoration: none;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            padding: 4px 6px;
+            border-radius: 4px
+        }
+
+        .lang-btn:hover,
+        .lang-btn.active {
+            color: var(--primary-green);
+            background: rgba(76, 175, 80, 0.1)
+        }
+
+        .lang-separator {
+            color: #ccc;
+            font-size: 0.9rem
+        }
+
+        #google_translate_element {
+            display: none
+        }
+
+        .goog-te-banner-frame.skiptranslate {
+            display: none !important
+        }
+
+        body {
+            top: 0px !important
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: 0 0;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--primary-green);
+            cursor: pointer
+        }
+
+        .hero {
+            margin-top: 70px;
+            padding: 5rem 2rem;
+            background: linear-gradient(135deg, var(--bg-green) 0%, #c8e6c9 100%);
+            text-align: center
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: var(--primary-green);
+            margin-bottom: 1rem
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--gray-text);
+            max-width: 700px;
+            margin: 0 auto
+        }
+
+        section {
+            padding: 5rem 2rem
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto
+        }
+
+        .rooms-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+            margin-top: 3rem
+        }
+
+        .room-card {
+            background: #fff;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, .1);
+            transition: all .3s;
+            display: flex;
+            flex-direction: column;
+            height: 100%
+        }
+
+        .room-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, .2)
+        }
+
+        .room-image-container {
+            position: relative;
+            width: 100%;
+            padding-top: 66.67%;
+            overflow: hidden
+        }
+
+        .room-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover
+        }
+
+        .room-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: var(--light-green);
+            color: #fff;
+            padding: .5rem 1rem;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: .9rem;
+            z-index: 2
+        }
+
+        .room-content {
+            padding: 2.5rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column
+        }
+
+        .room-content h3 {
+            font-size: 2rem;
+            color: var(--primary-green);
+            margin-bottom: 1rem
+        }
+
+        .room-price {
+            font-size: 1.8rem;
+            color: var(--light-green);
+            font-weight: 700;
+            margin-bottom: 1.5rem
+        }
+
+        .room-price span {
+            font-size: 1rem;
+            color: var(--gray-text);
+            font-weight: 400
+        }
+
+        .room-description {
+            color: var(--gray-text);
+            margin-bottom: 2rem;
+            line-height: 1.8;
+            flex: 1
+        }
+
+        .room-features {
+            list-style: none;
+            margin-bottom: 2rem
+        }
+
+        .room-features li {
+            padding: .7rem 0;
+            color: var(--gray-text);
+            display: flex;
+            align-items: flex-start;
+            gap: .7rem;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: .95rem
+        }
+
+        .room-features li:last-child {
+            border-bottom: none
+        }
+
+        .room-features li::before {
+            content: "✓";
+            color: var(--light-green);
+            font-weight: 700;
+            font-size: 1.2rem;
+            flex-shrink: 0
+        }
+
+        .btn {
+            padding: 1rem 2.5rem;
+            background: var(--primary-green);
+            color: #fff;
+            border: 3px solid var(--primary-green);
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all .3s;
+            display: inline-block;
+            text-align: center;
+            width: 100%
+        }
+
+        .btn:hover {
+            background: 0 0;
+            color: var(--primary-green);
+            transform: translateY(-3px)
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary-green), #1a3010);
+            color: #fff;
+            text-align: center;
+            padding: 5rem 2rem
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem
+        }
+
+        .cta-section p {
+            font-size: 1.1rem;
+            margin-bottom: 2.5rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: .95
+        }
+
+        .btn-white {
+            background: #fff;
+            color: var(--primary-green);
+            border: 3px solid #fff;
+            width: auto;
+            padding: 1rem 2.5rem
+        }
+
+        .btn-white:hover {
+            background: 0 0;
+            color: #fff
+        }
+
+        footer {
+            background: var(--primary-green);
+            color: #fff;
+            padding: 4rem 2rem 2rem
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto
+        }
+
+        .footer-top {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem
+        }
+
+        .footer-about h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem
+        }
+
+        .footer-about p {
+            opacity: .9;
+            line-height: 1.7;
+            margin-bottom: 1.5rem
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, .1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 1.3rem;
+            transition: all .3s
+        }
+
+        .social-link:hover {
+            background: rgba(255, 255, 255, .2);
+            transform: translateY(-3px)
+        }
+
+        .footer-section h4 {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            font-weight: 600
+        }
+
+        .footer-section ul {
+            list-style: none
+        }
+
+        .footer-section ul li {
+            margin-bottom: .8rem
+        }
+
+        .footer-section a {
+            color: rgba(255, 255, 255, .8);
+            text-decoration: none;
+            transition: color .3s;
+            font-size: .95rem
+        }
+
+        .footer-section a:hover {
+            color: #fff;
+            padding-left: 5px
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, .1)
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 2rem
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, .7);
+            text-decoration: none;
+            font-size: .9rem;
+            transition: color .3s
+        }
+
+        .footer-links a:hover {
+            color: #fff
+        }
+
+        .floating-buttons {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 999;
+            display: flex;
+            flex-direction: column;
+            gap: 15px
+        }
+
+        .floating-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, .3);
+            transition: all .3s ease;
+            cursor: pointer;
+            border: none
+        }
+
+        .floating-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, .4)
+        }
+
+        .floating-whatsapp {
+            background: linear-gradient(135deg, #25d366, #128c7e);
+            color: #fff;
+            animation: pulse 2s infinite
+        }
+
+        .floating-top {
+            background: linear-gradient(135deg, var(--light-green), var(--primary-green));
+            color: #fff;
+            opacity: 0;
+            visibility: hidden;
+            transition: all .3s ease
+        }
+
+        .floating-top.show {
+            opacity: 1;
+            visibility: visible
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                transform: scale(1)
+            }
+
+            50% {
+                transform: scale(1.05)
+            }
+        }
+
+        @media (max-width:1024px) {
+            .rooms-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem
+            }
+
+            .footer-top {
+                grid-template-columns: repeat(2, 1fr)
+            }
+        }
+
+        @media (max-width:768px) {
+            .nav-container {
+                padding: 1rem 1.5rem
+            }
+
+            .logo {
+                font-size: 1.3rem
+            }
+
+            .mobile-menu-btn {
+                display: block
+            }
+
+            .nav-menu {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 70px);
+                background: #fff;
+                flex-direction: column;
+                padding: 2rem;
+                transition: left .3s;
+                gap: 1.5rem
+            }
+
+            .nav-menu.active {
+                left: 0
+            }
+
+            .nav-link {
+                font-size: 1.1rem
+            }
+
+            .hero {
+                padding: 3rem 1.5rem
+            }
+
+            .hero h1 {
+                font-size: 2rem
+            }
+
+            .hero p {
+                font-size: 1rem
+            }
+
+            section {
+                padding: 3rem 1.5rem
+            }
+
+            .rooms-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem
+            }
+
+            .room-image-container {
+                padding-top: 60%
+            }
+
+            .footer-top {
+                grid-template-columns: 1fr;
+                gap: 2rem
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center
+            }
+
+            .floating-buttons {
+                bottom: 20px;
+                right: 20px;
+                gap: 12px
+            }
+
+            .floating-btn {
+                width: 55px;
+                height: 55px;
+                font-size: 1.5rem
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">KALIBARU COTTAGE</a>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="rooms.html" class="nav-link">Room</a></li>
+                <li><a href="facilities.html" class="nav-link">Facility</a></li>
+                <li><a href="experience.html" class="nav-link">Tours</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+                <li><a href="partners.html" class="nav-link">Partners</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li class="lang-switch">
+                    <a href="javascript:void(0)" onclick="changeLanguage('id')" class="lang-btn active"
+                        id="langID">ID</a>
+                    <span class="lang-separator">|</span>
+                    <a href="javascript:void(0)" onclick="changeLanguage('en')" class="lang-btn" id="langEN">EN</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Pilih Cottage Anda</h1>
+        <p>Cottage tradisional Jawa dengan fasilitas modern dan pemandangan alam yang memukau</p>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="rooms-grid">
+                <div class="room-card">
+                    <div class="room-image-container">
+                        <img src="https://lh3.googleusercontent.com/p/AF1QipMxKPvVZWL7HqVqYqN8YqN8YqN8YqN8YqN8YqN8=s1360-w1360-h1020"
+                            alt="Standard Cottage Kalibaru" class="room-image" loading="lazy">
+                        <span class="room-badge">Populer</span>
+                    </div>
+                    <div class="room-content">
+                        <h3>Standard Cottage</h3>
+                        <div class="room-price">Rp 750.000 <span>/malam</span></div>
+                        <p class="room-description">Cottage nyaman dengan arsitektur tradisional Jawa, cocok untuk
+                            pasangan atau solo traveler yang mencari ketenangan.</p>
+                        <ul class="room-features">
+                            <li>1 King Bed atau 2 Single Beds</li>
+                            <li>Kamar mandi dalam dengan air panas</li>
+                            <li>Teras pribadi dengan view perkebunan</li>
+                            <li>AC & TV</li>
+                            <li>WiFi gratis</li>
+                            <li>Sarapan untuk 2 orang</li>
+                        </ul>
+                        <a href="booking.html" class="btn">PESAN SEKARANG</a>
+                    </div>
+                </div>
+
+                <div class="room-card">
+                    <div class="room-image-container">
+                        <img src="https://lh3.googleusercontent.com/p/AF1QipNxLPwUZXM8IrWrZsO9ZsO9ZsO9ZsO9ZsO9ZsO9=s1360-w1360-h1020"
+                            alt="Deluxe Cottage Kalibaru" class="room-image" loading="lazy">
+                        <span class="room-badge">Rekomendasi</span>
+                    </div>
+                    <div class="room-content">
+                        <h3>Deluxe Cottage</h3>
+                        <div class="room-price">Rp 1.200.000 <span>/malam</span></div>
+                        <p class="room-description">Cottage premium dengan ruang lebih luas dan view terbaik ke Gunung
+                            Mrawan. Dilengkapi fasilitas superior untuk kenyamanan maksimal.</p>
+                        <ul class="room-features">
+                            <li>1 King Bed + Sofa Bed</li>
+                            <li>Kamar mandi luas dengan bathtub</li>
+                            <li>Balkon pribadi view gunung</li>
+                            <li>AC, TV LED & Sound System</li>
+                            <li>WiFi super cepat</li>
+                            <li>Sarapan untuk 2 orang</li>
+                            <li>Welcome drink & fruit basket</li>
+                            <li>Akses kolam renang prioritas</li>
+                        </ul>
+                        <a href="booking.html" class="btn">PESAN SEKARANG</a>
+                    </div>
+                </div>
+
+                <div class="room-card">
+                    <div class="room-image-container">
+                        <img src="https://lh3.googleusercontent.com/p/AF1QipOyMQxVaYN9JsX0atP1atP1atP1atP1atP1atP1=s1360-w1360-h1020"
+                            alt="Family Cottage Kalibaru" class="room-image" loading="lazy">
+                        <span class="room-badge">Best Value</span>
+                    </div>
+                    <div class="room-content">
+                        <h3>Family Cottage</h3>
+                        <div class="room-price">Rp 1.800.000 <span>/malam</span></div>
+                        <p class="room-description">Cottage luas dengan 2 kamar tidur, sempurna untuk keluarga atau
+                            group. Dilengkapi ruang keluarga dan dapur kecil.</p>
+                        <ul class="room-features">
+                            <li>2 Kamar tidur (1 King + 2 Single)</li>
+                            <li>2 Kamar mandi dengan air panas</li>
+                            <li>Ruang keluarga luas</li>
+                            <li>Dapur kecil dengan peralatan lengkap</li>
+                            <li>Teras luas dengan dining set</li>
+                            <li>2 AC, 2 TV LED</li>
+                            <li>WiFi super cepat</li>
+                            <li>Sarapan untuk 4 orang</li>
+                            <li>BBQ set (request)</li>
+                        </ul>
+                        <a href="booking.html" class="btn">PESAN SEKARANG</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Butuh Bantuan Memilih?</h2>
+            <p>Tim kami siap membantu Anda menemukan cottage yang sempurna sesuai kebutuhan dan budget</p>
+            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20butuh%20bantuan%20memilih%20cottage"
+                class="btn btn-white">HUBUNGI KAMI</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-top">
+                <div class="footer-about">
+                    <h3>Kalibaru Cottage</h3>
+                    <p>Resort alam dengan cottage tradisional Jawa di kaki Gunung Mrawan, Banyuwangi. Nikmati ketenangan
+                        alam dan keramahan khas Jawa Timur.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-link" aria-label="TripAdvisor">✈️</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="rooms.html">Rooms</a></li>
+                        <li><a href="facilities.html">Facilities</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="experience.html">Tours</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="partners.html">Partners</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="booking.html">Booking</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>📍 Kalibaru, Banyuwangi</li>
+                        <li>📞 +62 333 897123</li>
+                        <li>📱 +62 812 3456 7890</li>
+                        <li>✉️ info@kalibarucottages.web.id</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Kalibaru Cottage. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <div class="floating-buttons">
+        <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20bertanya%20tentang%20Kalibaru%20Cottage"
+            class="floating-btn floating-whatsapp" target="_blank" aria-label="WhatsApp">
+            💬
+        </a>
+        <button class="floating-btn floating-top" id="backToTop" aria-label="Back to Top">
+            ↑
+        </button>
+    </div>
+
+    <script>
+        function toggleMenu() { document.getElementById('navMenu').classList.toggle('active') }
+        document.querySelectorAll('.nav-link').forEach(link => { link.addEventListener('click', () => { document.getElementById('navMenu').classList.remove('active') }) });
+        window.addEventListener('scroll', function () { const navbar = document.querySelector('.navbar'); if (window.scrollY > 50) { navbar.style.boxShadow = '0 5px 30px rgba(0,0,0,0.15)' } else { navbar.style.boxShadow = '0 2px 20px rgba(0,0,0,0.1)' } });
+        const backToTopBtn = document.getElementById('backToTop'); window.addEventListener('scroll', function () { if (window.scrollY > 300) { backToTopBtn.classList.add('show') } else { backToTopBtn.classList.remove('show') } }); backToTopBtn.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }) });
+    </script>
+    <div id="google_translate_element"></div>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'id', includedLanguages: 'en,id', autoDisplay: false }, 'google_translate_element');
+        }
+        function changeLanguage(lang) {
+            var selectField = document.querySelector(".goog-te-combo");
+            if (selectField) {
+                selectField.value = lang;
+                selectField.dispatchEvent(new Event("change"));
+                document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+                document.getElementById('lang' + lang.toUpperCase()).classList.add('active');
+            }
+        }
+    </script>
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+
+</html>
