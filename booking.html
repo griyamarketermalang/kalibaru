@@ -193,15 +193,27 @@
         }
 
         #google_translate_element {
-            display: none
+            display: none !important;
         }
 
         .goog-te-banner-frame.skiptranslate {
-            display: none !important
+            display: none !important;
         }
 
         body {
-            top: 0px !important
+            top: 0px !important;
+        }
+
+        .goog-tooltip,
+        .goog-te-balloon-frame,
+        .goog-te-gadget-simple,
+        .goog-te-menu-value {
+            display: none !important;
+        }
+
+        font {
+            background-color: transparent !important;
+            box-shadow: none !important;
         }
 
         .nav-link::after {
